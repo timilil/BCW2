@@ -30,13 +30,13 @@ const showImages = () => {
   .then((json) => {
     json.forEach((image) => {
       /* put code here */
-          let elem = document.createElement("LI");
-          let aElem = document.createElement("A");
-          let textnode = document.createTextNode(image.mediaTitle);
-          let h3 = document.createElement("H3");
-          let img = document.createElement('IMG');
-          let fig = document.createElement('FIGURE');
-          let figcaption = document.createElement('FIGCAPTION');
+          const elem = document.createElement("LI");
+          const aElem = document.createElement("A");
+          const textnode = document.createTextNode(image.mediaTitle);
+          const h3 = document.createElement("H3");
+          const img = document.createElement('IMG');
+          const fig = document.createElement('FIGURE');
+          const figcaption = document.createElement('FIGCAPTION');
 
           aElem.setAttribute("href", "img/original/"+image.mediaUrl);
           img.setAttribute("src", "img/thumbs/"+image.mediaThumb);
